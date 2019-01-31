@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage, HistorialPage } from "../index.pages";
+import { HistorialPage, HomePage } from '../index.pages';
 
 @IonicPage()
 @Component({
@@ -9,8 +9,8 @@ import { HomePage, HistorialPage } from "../index.pages";
 })
 export class TabsPage {
 
-  tab1: any = HomePage;
-  tab2: any = HistorialPage;
+  public tab1: any = HomePage;
+  public tab2: any = HistorialPage;
 
   constructor() { }
 

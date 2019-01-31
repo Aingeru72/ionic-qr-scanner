@@ -1,6 +1,4 @@
-/**
- * Índice de páginas
- */
+/**  Índice de páginas */
 export { TabsPage } from './tabs/tabs';
 export { HomePage } from './home/home';
 export { MapaPage } from './mapa/mapa';
