@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
-// Providers
-import { HistorialProvider } from './../../providers/historial/historial';
 // Modelos
 import { ScanData } from './../../models/scan-data.model';
+// Providers
+import { HistorialProvider } from './../../providers/historial/historial';
 
 @IonicPage()
 @Component({
@@ -12,12 +12,12 @@ import { ScanData } from './../../models/scan-data.model';
 })
 export class HistorialPage {
 
-  historial: ScanData[] = [];
+  public historial: ScanData[] = [];
 
   constructor(private historialProvider: HistorialProvider) {
   }
 
-  ionViewDidLoad() {
+  public ionViewDidLoad() {
     this.historial = this.historialProvider.cargarHistorial();
   }
 
@@ -25,7 +25,7 @@ export class HistorialPage {
    * Muestra el resultado seleccionado de la lista
    * @param index: índice de resultado del historial
    */
-  mostrarResultado(index: number) {
+  public mostrarResultado(index: number) {
     this.historialProvider.abrirEscaner(index);
   }
 
