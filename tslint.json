@@ -1,8 +1,18 @@
 {
+  "extends": [
+    "tslint-ionic-rules/strict",
+    // "tslint-ionic-rules",
+    "tslint:latest",
+    "tslint-config-airbnb",
+    "tslint-eslint-rules"
+  ],
   "rules": {
-    "no-duplicate-variable": true,
-    "no-unused-variable": [
-      true
+    // Permitir el uso de console.
+    "no-console": false,
+    // Maximo de caracteres por linea
+    "max-line-length": [
+      true,
+      172
     ]
   },
   "rulesDirectory": [
